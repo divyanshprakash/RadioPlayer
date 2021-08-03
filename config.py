@@ -45,17 +45,17 @@ else:
     finalurl=STREAM
 
 class Config:
-    ADMIN = os.environ.get("ADMINS", "")
+    ADMIN = os.environ.get("ADMINS", "691224603")
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
-    API_ID = int(os.environ.get("API_ID", ""))
-    CHAT = int(os.environ.get("CHAT", ""))
+    API_ID = int(os.environ.get("API_ID", "7706870"))
+    CHAT = int(os.environ.get("CHAT", "-1001296119865"))
     LOG_GROUP=os.environ.get("LOG_GROUP", "")
     if LOG_GROUP:
         LOG_GROUP=int(LOG_GROUP)
     else:
         LOG_GROUP=None
-    STREAM_URL=finalurl
-    ADMIN_ONLY=os.environ.get("ADMIN_ONLY", "False")
+    STREAM_URL=https://youtu.be/BxhDqNeTHKM
+    ADMIN_ONLY=os.environ.get("ADMIN_ONLY", "N")
     REPLY_MESSAGE=os.environ.get("REPLY_MESSAGE", None)
     if REPLY_MESSAGE:
         REPLY_MESSAGE=REPLY_MESSAGE
@@ -67,11 +67,11 @@ class Config:
     RADIO_TITLE=os.environ.get("RADIO_TITLE", "Music 24/7 | Radio Mode")
     if RADIO_TITLE == "False":
         RADIO_TITLE=None
-    DURATION_LIMIT=int(os.environ.get("MAXIMUM_DURATION", 15))
+    DURATION_LIMIT=int(os.environ.get("MAXIMUM_DURATION", 100))
     DELAY = int(os.environ.get("DELAY", 10))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
-    SESSION = os.environ.get("SESSION_STRING", "")
+    API_HASH = os.environ.get("API_HASH", "6982374bef85e9953a1ee53a02e92991")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "1937706744:AAF_YwZadKqoYg8g_OEgS_QVluOA5V2fuok") 
+    SESSION = os.environ.get("SESSION_STRING", "AQA03Pr_MPQ0mbluAm9VP0ARBD0ZWO3sEWydW-rav6doq1OkH9yQrpmLn4fpbP7z6RZLxlT-NRaOZl2OSLG84G9uuZUxB-Z3sef5bMzttpiK8DUdxPznYPsSQ6k9Qe_P8cE3CMJSRqBaskltWD6tAhiKyyayTE8jgrdo8mMmdOn3A1nWpW82Xu2gFlFxfwcvu01kEOJlp2d-5-AMbUFP0YsR6aLTyuuJ9tDIWYcSfYP5QI3a60GLqCJAJiL1vSmiRCxlvxgMIWal-_Hace-K2c9laRRuhWCyVDyNqhpFaC2O5E0gAWVYiHfq4dCbKSrczBARAXhEc3SZ4o_vrTVLNmphckfQFwA")
     playlist=[]
     msg = {}
 
